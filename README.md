@@ -28,3 +28,7 @@ sudo kill <procces ID>
 sudo service docker stop
 sudo rm /var/lib/docker/network/files/local-kv.db
 sudo service docker start
+  
+  
+  Change
+  https://trobertson.site/creating-a-wordpress-development-environment-with-docker-compose/
