@@ -17,3 +17,14 @@ UPDATE wp_options SET option_value = replace(option_value, 'http://www.oldurl', 
 UPDATE wp_posts SET guid = replace(guid, 'http://www.oldurl','http://www.newurl');
 UPDATE wp_posts SET post_content = replace(post_content, 'http://www.oldurl', 'http://www.newurl');
 UPDATE wp_postmeta SET meta_value = replace(meta_value,'http://www.oldurl','http://www.newurl');
+
+
+
+## Problems with nginx-proxy :
+
+sudo lsof -i -P -n | grep 9000
+sudo kill <procces ID>
+
+sudo service docker stop
+sudo rm /var/lib/docker/network/files/local-kv.db
+sudo service docker start
